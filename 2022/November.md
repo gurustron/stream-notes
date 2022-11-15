@@ -6,3 +6,7 @@
 ## 9th
 - https://leetcode.com/problems/reshape-the-matrix/?envType=study-plan&id=data-structure-i
 - https://leetcode.com/problems/pascals-triangle/?envType=study-plan&id=data-structure-i
+
+## 15th
+- https://leetcode.com/problems/search-a-2d-matrix/?envType=study-plan&id=data-structure-i
+- https://leetcode.com/problems/first-unique-character-in-a-string/?envType=study-plan&id=data-structure-i
