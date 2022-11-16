@@ -10,3 +10,8 @@
 ## 15th
 - https://leetcode.com/problems/search-a-2d-matrix/?envType=study-plan&id=data-structure-i
 - https://leetcode.com/problems/first-unique-character-in-a-string/?envType=study-plan&id=data-structure-i
+
+## 16th
+- https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-7
+- https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-7
+- https://learn.microsoft.com/en-us/dotnet/core/runtime-config/https://learn.microsoft.com/en-us/dotnet/core/runtime-config/
