@@ -13,7 +13,6 @@
 
 ## 16th
 - https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-7
-- https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-7
 - https://learn.microsoft.com/en-us/dotnet/core/runtime-config/https://learn.microsoft.com/en-us/dotnet/core/runtime-config/
 
 # 18th
