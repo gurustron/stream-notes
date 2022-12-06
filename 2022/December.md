@@ -5,4 +5,7 @@
 ## 5th
 - https://github.com/gurustron/bench-aot
 - https://stackoverflow.com/q/74689476/2501279
-- 
+
+
+## 6th
+- https://stackoverflow.com/a/74605488/2501279 - gcc issue for AOT dut to NVIDIA drivers installation
