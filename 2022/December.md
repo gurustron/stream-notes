@@ -6,6 +6,11 @@
 - https://github.com/gurustron/bench-aot
 - https://stackoverflow.com/q/74689476/2501279
 
-
 ## 6th
 - https://stackoverflow.com/a/74605488/2501279 - gcc issue for AOT dut to NVIDIA drivers installation
+
+## 22th
+- https://github.com/statiqdev
+- https://neetcode.io/practice
+- https://www.codingame.com/contests/fall-challenge-2022
+
