@@ -14,3 +14,7 @@
 - https://neetcode.io/practice
 - https://www.codingame.com/contests/fall-challenge-2022
 
+## 23th
+- https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-11#raw-string-literals
+- https://github.com/gurustron/playground/tree/master/csharp/SOAnswers/NET7/NET7Tests
+- https://github.com/Ogieeeeee/Blath
