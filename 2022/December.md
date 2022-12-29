@@ -18,3 +18,6 @@
 - https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-11#raw-string-literals
 - https://github.com/gurustron/playground/tree/master/csharp/SOAnswers/NET7/NET7Tests
 - https://github.com/Ogieeeeee/Blath
+
+## 29th
+- https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-10.0/parameterless-struct-constructors
