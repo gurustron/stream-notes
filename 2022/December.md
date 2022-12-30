@@ -21,3 +21,7 @@
 
 ## 29th
 - https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-10.0/parameterless-struct-constructors
+
+## 30th
+
+- https://learn.microsoft.com/en-us/ef/core/what-is-new/ef-core-7.0/whatsnew
