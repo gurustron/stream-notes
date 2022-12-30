@@ -25,3 +25,4 @@
 ## 30th
 
 - https://learn.microsoft.com/en-us/ef/core/what-is-new/ef-core-7.0/whatsnew
+- https://github.com/apache/ignite/blob/da8a6bb4756c998aa99494d395752be96d841ec8/modules/platforms/dotnet/Apache.Ignite.Core.Tests/Cache/Query/Linq/CacheLinqTest.Custom.cs#L112
