@@ -5,4 +5,6 @@
 - HiLo:
   - https://www.talkingdotnet.com/use-hilo-to-generate-keys-with-entity-framework-core/ 
   - https://www.npgsql.org/efcore/modeling/generated-properties.html#hilo-autoincrement-generation
--  
+
+## 9th 
+- https://stackoverflow.com/questions/65702049/using-global-query-filters-for-all-entities/65702479#65702479 - apply query filter to all entites
