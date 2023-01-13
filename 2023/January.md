@@ -8,3 +8,7 @@
 
 ## 9th 
 - https://stackoverflow.com/questions/65702049/using-global-query-filters-for-all-entities/65702479#65702479 - apply query filter to all entites
+
+
+## 13th
+- https://stackoverflow.com/help/badges/146/legendary
