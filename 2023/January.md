@@ -12,3 +12,7 @@
 
 ## 13th
 - https://stackoverflow.com/help/badges/146/legendary
+
+
+## 27th
+- https://stackoverflow.com/questions/75226169/net-6-string-indexof-returns-wrong-value-when-looking-for-on-computers-wit
