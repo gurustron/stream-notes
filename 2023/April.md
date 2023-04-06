@@ -23,4 +23,6 @@
       - surname
       - student_no
       - group_no
-- asd
+
+## 6th
+- `MATCH_RECOGNIZE` in SQL (PrestoSQL/Trino dialect) https://stackoverflow.com/a/75947435/2501279
