@@ -162,3 +162,6 @@
     ```
 - Meme of the stream
   ![image](https://github.com/gurustron/stream-notes/assets/6535969/ba1129f0-7c15-437d-a5b5-486358b2972d)
+
+## 20th
+- https://0.30000000000000004.com/
