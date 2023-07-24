@@ -165,3 +165,6 @@
 
 ## 20th
 - https://0.30000000000000004.com/
+
+## 24th
+- https://github.com/gurustron/net-testcontainers-playground - my small playground for testcontainers
