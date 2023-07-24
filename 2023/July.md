@@ -168,3 +168,4 @@
 
 ## 24th
 - https://github.com/gurustron/net-testcontainers-playground - my small playground for testcontainers
+- Repository/UoW over EF Core anti-pattern example [from SO](https://stackoverflow.com/questions/76754765/how-can-i-use-theninclude-in-generic-class-in-unitofwork)
