@@ -20,3 +20,27 @@ Methods of abstraction:
 | messaging   |           V           |         V         |              V              |         X         |          X          |
 | adapter     |           V           |         V         |              V              |         V         |          V          |
 | message bus |           V           |         V         |              V              |         V         |          V          |
+
+## Choosing and Comparing Architectures
+
+### Normalize feature sets
+- Build your own feature matrix
+- good, bad ugly
+
+Suck/rock dichotomy 
+
+### Spikes
+- time-boxed experimental coding exercise
+- pure knowledge acquisition
+- NOT a prototype
+- develop on "dead end" branch
+
+### CQRS
+
+Natural fits:
+- task-based UI
+- meshes well with event sourcing
+- eventual consistency (consistency or availability, never both)
+- complex or granular domains
+https://www.allthingsdistributed.com/2007/12/eventually_consistent.html
+https://www.allthingsdistributed.com/2008/12/eventually_consistent.html
