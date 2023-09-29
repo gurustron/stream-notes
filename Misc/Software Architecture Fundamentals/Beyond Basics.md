@@ -27,7 +27,7 @@ Methods of abstraction:
 - Build your own feature matrix
 - good, bad ugly
 
-Suck/rock dichotomy 
+### Suck/rock dichotomy 
 
 ### Spikes
 - time-boxed experimental coding exercise
@@ -42,5 +42,26 @@ Natural fits:
 - meshes well with event sourcing
 - eventual consistency (consistency or availability, never both)
 - complex or granular domains
+  
 https://www.allthingsdistributed.com/2007/12/eventually_consistent.html
 https://www.allthingsdistributed.com/2008/12/eventually_consistent.html
+
+### Domain logic classification
+https://martinfowler.com/bliki/EagerReadDerivation.html
+
+- validations: checks that input makes sense and objects are properly suited for further actions.
+- consequences: initiating some action that will change the state of the world
+- derivations: figuring out some information based on information we already have
+
+### LMAX
+
+https://martinfowler.com/articles/lmax.html
+
+![image](https://github.com/gurustron/stream-notes/assets/6535969/8d945ecf-c506-432a-a2e7-171845187114)
+
+At a top level, the architecture has three parts
+- business logic processor
+- input disruptor
+- output disruptors
+
+### Architect for change vs YAGNI
