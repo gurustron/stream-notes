@@ -65,3 +65,9 @@ At a top level, the architecture has three parts
 - output disruptors
 
 ### Architect for change vs YAGNI
+
+## 5.Web Services and Messaging
+
+- REST in Practice by Jim Webber, Savas Parastatidis, Ian Robinson
+- [Richardson Maturity Model](https://martinfowler.com/articles/richardsonMaturityModel.html)
+- HATEOFS: Hypermedia as the engine of application state 
