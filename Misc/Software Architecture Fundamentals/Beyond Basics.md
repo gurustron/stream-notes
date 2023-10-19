@@ -66,8 +66,23 @@ At a top level, the architecture has three parts
 
 ### Architect for change vs YAGNI
 
-## 5.Web Services and Messaging
+## 5. Web Services and Messaging
 
 - REST in Practice by Jim Webber, Savas Parastatidis, Ian Robinson
 - [Richardson Maturity Model](https://martinfowler.com/articles/richardsonMaturityModel.html)
-- HATEOFS: Hypermedia as the engine of application state 
+- HATEOFS: Hypermedia as the engine of application state
+
+## 6. SOA Fundamentals
+
+### SOA must haves
+- Business services (services _business needs_ to perfrom)
+- Service abstraction (usually all 5 should be achieved):
+  - location transparency
+  - name transparency
+  - implementation transparency
+  - access decoupling
+  - contract decoupling
+
+Service registry can access first 3 levels of abstraction.
+
+![image](https://github.com/gurustron/stream-notes/assets/6535969/bf24984e-e86b-4c08-a67c-f89975569162)
