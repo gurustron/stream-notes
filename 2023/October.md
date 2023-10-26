@@ -1,5 +1,9 @@
-## 4th
-- [Enterprise Integration Patterns](https://www.enterpriseintegrationpatterns.com/patterns/messaging/Messaging.html)
+## 26th
+
+- [DistributedLock](https://github.com/madelson/DistributedLock):
+  DistributedLock is a .NET library that provides robust and easy-to-use distributed mutexes, reader-writer locks, and semaphores based on a variety of underlying technologies.
+- [Stryker.NET](https://github.com/stryker-mutator/stryker-net):
+  Stryker offers mutation testing for your .NET Core and .NET Framework projects. It allows you to test your tests by temporarily inserting bugs in your source code.
 
 ## 19th
 
@@ -151,3 +155,6 @@ public sealed class ComplexRequestProcessor : IRequestProcessor
   }
 }
 ```
+
+## 4th
+- [Enterprise Integration Patterns](https://www.enterpriseintegrationpatterns.com/patterns/messaging/Messaging.html)
