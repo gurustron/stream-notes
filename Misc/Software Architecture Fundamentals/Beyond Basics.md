@@ -86,3 +86,9 @@ At a top level, the architecture has three parts
 Service registry can access first 3 levels of abstraction.
 
 ![image](https://github.com/gurustron/stream-notes/assets/6535969/bf24984e-e86b-4c08-a67c-f89975569162)
+
+### SOA core pattern elements:
+- service registry 
+- message enhancement
+- message transformation
+- protocol transformation 
