@@ -91,4 +91,8 @@ Service registry can access first 3 levels of abstraction.
 - service registry 
 - message enhancement
 - message transformation
-- protocol transformation 
+- protocol transformation
+
+## 7. Integration hubs
+
+
