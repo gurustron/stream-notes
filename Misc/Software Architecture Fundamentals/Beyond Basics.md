@@ -75,6 +75,10 @@ At a top level, the architecture has three parts
 ## 6. SOA Fundamentals
 
 ### SOA must haves
+
+![image](https://github.com/gurustron/stream-notes/assets/6535969/1a4dc674-4162-4daa-9aa3-deb9360c7790)
+
+
 - Business services (services _business needs_ to perfrom)
 - Service abstraction (usually all 5 should be achieved):
   - location transparency
