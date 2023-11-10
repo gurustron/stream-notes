@@ -99,4 +99,14 @@ Service registry can access first 3 levels of abstraction.
 
 ## 7. Integration hubs
 
+## 8.Continuous Delivery Part 2
+
+- Ubiquitous Language (term by bounEric Evans)
+- Bounded context
+
+#### Move from shared resources to bounded context
+- use branch by abstraction.strangler pattern
+- identify domain boundary
+- decouple infrastructure
+- isolate behind a component
 
