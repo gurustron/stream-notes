@@ -1,4 +1,5 @@
 #### 5th 
+- [HTTPCLIENT CONNECTION POOLING IN .NET CORE](https://www.stevejgordon.co.uk/httpclient-connection-pooling-in-dotnet-core)
 - ##### Interview question #1:
 
   There is a product whose price may change.
