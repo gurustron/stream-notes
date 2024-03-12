@@ -1,3 +1,6 @@
+#### 12th
+- `AsNoTrackingWithIdentityResolution` https://stackoverflow.com/a/78143863/2501279
+
 #### 11th
 - CDC Meeting Report Tool - https://github.com/gurustron/cdc-meeting-report-tool
 - ![image](https://github.com/gurustron/stream-notes/assets/6535969/52b8a69a-9778-4fc2-887d-cbb1d1765b7f)
