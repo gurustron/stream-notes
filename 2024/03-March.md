@@ -1,3 +1,11 @@
+#### 14th 
+- https://github.com/dotnet-state-machine/stateless
+- MEMES!!!!
+  
+![image](https://github.com/gurustron/stream-notes/assets/6535969/7229a025-caa4-4a3d-8cd8-7af254eb6d09)
+
+![image](https://github.com/gurustron/stream-notes/assets/6535969/8acfec22-6cb4-4745-94f4-ceda76b3977a)
+
 #### 12th
 - `AsNoTrackingWithIdentityResolution` https://stackoverflow.com/a/78143863/2501279
 
