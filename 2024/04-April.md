@@ -1,3 +1,6 @@
+#### 8th
+- [Keyset pagination](https://learn.microsoft.com/en-us/ef/core/querying/pagination#keyset-pagination)
+
 #### 5th
 - https://github.com/dotnet/aspnetcore/issues/54978 - found a bug in ASP.NET Core?
 
