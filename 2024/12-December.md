@@ -6,9 +6,9 @@
    ```
 - Docker setup from course
   ```
-  docker run --name Node_X -d scylladb/scylla:5.2.0 --overprovisioned 1 --smp 1
-  docker run --name Node_Y -d scylladb/scylla:5.2.0 --seeds="$(docker inspect --format='{{ .NetworkSettings.IPAddress }}' Node_X)" --overprovisioned 1 --smp 1
-  docker run --name Node_Z -d scylladb/scylla:5.2.0 --seeds="$(docker inspect --format='{{ .NetworkSettings.IPAddress }}' Node_X)" --overprovisioned 1 --smp 1
+  docker run --name Node_X -d scylladb/scylla:5.2.0 --overprovisioned 1 --smp 1 --reactor-backend=epoll
+  docker run --name Node_Y -d scylladb/scylla:5.2.0 --seeds="$(docker inspect --format='{{ .NetworkSettings.IPAddress }}' Node_X)" --overprovisioned 1 --smp 1 --reactor-backend=epoll
+  docker run --name Node_Z -d scylladb/scylla:5.2.0 --seeds="$(docker inspect --format='{{ .NetworkSettings.IPAddress }}' Node_X)" --overprovisioned 1 --smp 1 --reactor-backend=epoll
   ```
 
 
