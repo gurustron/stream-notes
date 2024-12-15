@@ -51,4 +51,12 @@
   ```
   ![image](https://github.com/user-attachments/assets/7a6a5d5f-5900-425a-951e-be4f0bb91b9f)
 
+  ## 14th
+
+  - Magic command
+     ```
+     ./usr/lib/scylla/seastar-cpu-map.sh -n scylla
+     ```
+  
+
 
