@@ -43,4 +43,6 @@
     - [ConcurrentDictionary](https://github.com/dotnet/runtime/pull/116949) -  irreducible loop -> reducible loop
 14. LINQ
     - `Contains` skips work for `OrderBy`, `Distinct`, and `Reverse` (like `OrderBy` + `First...`) - [almost 30 specialized implementations of `Contains` across the various iterator specializations](https://github.com/dotnet/runtime/pull/112684)
+    - `Shuffle` + new method with the same designs (`Count`, `First`, ...) + `Take` ["reservoir sampling."](https://en.wikipedia.org/wiki/Reservoir_sampling) `+ Take.Contains` (hypergeometric distribution)
+    - `LeftJoin` and `RightJoin` (better perf than alternatives)
 15.    
