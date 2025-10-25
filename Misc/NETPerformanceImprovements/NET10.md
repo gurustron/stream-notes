@@ -45,4 +45,8 @@
     - `Contains` skips work for `OrderBy`, `Distinct`, and `Reverse` (like `OrderBy` + `First...`) - [almost 30 specialized implementations of `Contains` across the various iterator specializations](https://github.com/dotnet/runtime/pull/112684)
     - `Shuffle` + new method with the same designs (`Count`, `First`, ...) + `Take` ["reservoir sampling."](https://en.wikipedia.org/wiki/Reservoir_sampling) `+ Take.Contains` (hypergeometric distribution)
     - `LeftJoin` and `RightJoin` (better perf than alternatives)
-15.    
+    - `UseSizeOptimizedLinq` setting for NativeAOT - size vs perfromance (different versions). Some of the more impactful specializations where the throughput gains significantly outweigh the relatively-minimal size cost brought to NativeAOT anyway
+15. Frozen Collections
+   - `FrozenDictionary` - specializations for size `int` or smaller + enums. Handles dense collections.  
+   - `FrozenDictionary` and `FrozenSet` - GVM (generic method parameter (the alternate key type)) Rather than the lookup operation itself being a generic virtual method, the PR introduces a separate generic virtual method that retrieves a delegate for performing the lookup; the retrieval of that delegate still incurs GVM penalties, but once the delegate is retrieved, it can be cached, and invoking it does not incur said overheads. 
+16. 
