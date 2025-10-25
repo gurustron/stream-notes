@@ -49,4 +49,14 @@
 15. Frozen Collections
    - `FrozenDictionary` - specializations for size `int` or smaller + enums. Handles dense collections.  
    - `FrozenDictionary` and `FrozenSet` - GVM (generic method parameter (the alternate key type)) Rather than the lookup operation itself being a generic virtual method, the PR introduces a separate generic virtual method that retrieves a delegate for performing the lookup; the retrieval of that delegate still incurs GVM penalties, but once the delegate is retrieved, it can be cached, and invoking it does not incur said overheads. 
-16. 
+16. BitArray
+   - `CollectionsMarshal.AsBytes(BitArray)` method that returns a `Span<byte>` directly referencing the BitArray‘s underlying storage.
+17. Misc Collections
+   - List.InsertRange now uses internal `GrowForInsertion` (introduced in .NET 9) which copies parts before and after the insertion to prevent double copying
+   - ConcurrentDictionary remembers originally requested size (capacity) on clearing TODO: check out how effective are knobs on the dict with concurrency levels and grow locks
+   - Dictionary with string keys and constant keys lookups works faster. https://github.com/dotnet/runtime/pull/117427/files
+   - `OrderedDictionary` `TryGetValue`/`TryAdd` return `out index` which can be used in `SetAt`
+   - `InlineArray`
+      - implicitly convertable to `Span<T>`
+      - `InlineArray2<T>`, `InlineArray3<T>` to prevent code bloat (previosly generated in-place for every assembly)    
+18. assa
