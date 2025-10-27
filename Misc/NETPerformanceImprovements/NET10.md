@@ -59,4 +59,10 @@
    - `InlineArray`
       - implicitly convertable to `Span<T>`
       - `InlineArray2<T>`, `InlineArray3<T>` to prevent code bloat (previosly generated in-place for every assembly)    
-18. assa
+    
+18. I/O
+   - `FileSystemWatcher` - fixed leak on Windows (disposing why in use) + improved interop 
+   - `BufferedStream.WriteByte` was flushing instead of just writing which could be costly in some underlying streams (`DeflateStream` for example)
+   - `zlib-ng` used by DeflateStream/GZipStream/ZLibStream (managed wrappers) is updated to 2.2.5
+19. 
+20. 
