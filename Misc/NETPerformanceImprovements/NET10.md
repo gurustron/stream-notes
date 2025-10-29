@@ -33,6 +33,7 @@
 12. Types
      - datetime types (some funny shit in PRs)
      - Guid Version + IUtf8SpanParsable
+     - IPAddress and IPNetwork IUtf8SpanParsable (networking) + IsValid (instead of Tryparse with alloc)
      - some decimal Uint128 BigInteger improvements 
      - System.Numerics.Tensors extended + optimized + compound operator (= + overload for +=, removes allocation for tensor)
 13. Collections
@@ -64,5 +65,11 @@
    - `FileSystemWatcher` - fixed leak on Windows (disposing why in use) + improved interop 
    - `BufferedStream.WriteByte` was flushing instead of just writing which could be costly in some underlying streams (`DeflateStream` for example)
    - `zlib-ng` used by DeflateStream/GZipStream/ZLibStream (managed wrappers) is updated to 2.2.5
-19. 
+   - `ZipArchive`
+      - not reling on BinaryReader and BinaryWriter, avoiding their underlying buffer allocations and having more fine-grained control over how and when exactly data is encoded/decoded and written/read
+      - A ZipArchive update used to be “rewrite the world”: it loaded every entry’s data into memory and rewrote all the file headers, all entry data, and the “central directory” (what the zip format calls its catalog of all the entries in the archive). A large archive would have proportionally large allocation. This PR introduces change tracking plus ordering of entries so that only the portion of the file from the first actually affected entry (or one whose variable‑length metadata/data changed) is rewritten, rather than always rewriting the whole thing.Faster + reduce alloc
+      - ZipArchive and ZipFile also gain async APIs
+   - StreamReader.EndOfStream is prop perfroming IO to determine if it is the end, which is blocking etc. (`while (!reader.EndOfStream)` ... should be `while (await reader.ReadLineAsync() is string line)`)
+19. Networking
+   - Uri was limited to 65k (uri can contain data itself for example images `data:application/octet-stream;base64`) due to using ushort for part delimeters, now those are ints, Uri implements path compression (`Console.WriteLine(new Uri("http://test/hello/../hello/../hello"));`) which was O(N^2) (not a problem for bounded URIs), now [O(N)](https://github.com/dotnet/runtime/pull/117820) which removed the attack vector
 20. 
