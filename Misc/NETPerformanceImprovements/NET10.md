@@ -72,4 +72,13 @@
    - StreamReader.EndOfStream is prop perfroming IO to determine if it is the end, which is blocking etc. (`while (!reader.EndOfStream)` ... should be `while (await reader.ReadLineAsync() is string line)`)
 19. Networking
    - Uri was limited to 65k (uri can contain data itself for example images `data:application/octet-stream;base64`) due to using ushort for part delimeters, now those are ints, Uri implements path compression (`Console.WriteLine(new Uri("http://test/hello/../hello/../hello"));`) which was O(N^2) (not a problem for bounded URIs), now [O(N)](https://github.com/dotnet/runtime/pull/117820) which removed the attack vector
-20. 
+   - `GetStringAsync` and `GetByteArrayAsync` became faster/less allocatey by using internal `LimitArrayPoolWriteStream` [PR](https://github.com/dotnet/runtime/pull/109642)
+   - Native AOT has a switch to remove HTTP/3 support from HttpClient (if you are not using it)
+20. Regex
+   - backtracking vs non-backtracking atomic groups. .NET regex optimizer can add (yep, really, .NET 10 for example does [`@"\d+\D"`->`@"(?>\d+)\D")`](https://github.com/dotnet/runtime/blob/d3dffb9eb5f1ae5368d47007223017028e5e1223/src/libraries/System.Text.RegularExpressions/tests/UnitTests/RegexReductionTests.cs#L421), or previous versions `a|e|i|o|u` -> `[aeiou]`) atomic groups when no observable effect.
+       20,000 regular expression patterns in database of real-world regexes sourced from nuget. .NET 10 over 70% of those patterns have at least one construct upgraded to be atomic
+   - Remove capturing groups (make them non-capturing) in the look-arounds, look-arounds for zero-width patterns (`(?=$)` -> `$`)
+   - Small intresting improvement for patterns like `\b\w+\b` -> "full checks" `Utilities.IsBoundary` -> "half checks"  `Utilities.IsPreWordCharBoundary/IsPostWordCharBoundary`
+   - Handling for more "everytning" patterns (`\n|.`)
+   - More rewrites  (`\r\n|\r` -> `\r(?:\n|)` -> `\r\n?` -> `\r(?>\n?)`) , ~20% perfr improvement for patterns like `@"ab|a"`
+21. 
