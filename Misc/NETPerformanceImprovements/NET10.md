@@ -81,4 +81,9 @@
    - Small intresting improvement for patterns like `\b\w+\b` -> "full checks" `Utilities.IsBoundary` -> "half checks"  `Utilities.IsPreWordCharBoundary/IsPostWordCharBoundary`
    - Handling for more "everytning" patterns (`\n|.`)
    - More rewrites  (`\r\n|\r` -> `\r(?:\n|)` -> `\r\n?` -> `\r(?>\n?)`) , ~20% perfr improvement for patterns like `@"ab|a"`
-21. 
+   - `TryFindNextPossibleStartingPosition` -> `TryMatchAtCurrentPosition`, formar now considers lookarounds   
+21. `MemoryExtensions` now
+   - not constrained `IEquatable<T>`
+   - Can accept non-default comparer
+22. as
+23. assa
