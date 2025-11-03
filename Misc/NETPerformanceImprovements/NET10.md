@@ -85,5 +85,17 @@
 21. `MemoryExtensions` now
    - not constrained `IEquatable<T>`
    - Can accept non-default comparer
-22. as
-23. assa
+22. JSON
+   - There was cache/pool for some internal stuff (`Utf8JsonWriter` and `PooledByteBufferWriter`) it was used only for asynchronous streaming serialization operations, but as it turns out, it wasn’t being used for synchronous streaming serialization operations. Now that's fixed.
+   - Aforementioned OrderedDictionary.TryAdd... results in `JsonObject["key"] = "value"` speed up
+   - JsonObject.TryAdd method, `JsonArray` `RemoveAll` and `RemoveRange`, `JsonElement.Parse`
+   - `Utf8JsonWriter` `WriteStringValueSegment` `WriteBase64StringSegment`
+   - `JsonMarshal.GetRawUtf8PropertyName`
+23. Diagnostics
+   - since .NET 7 - long start = Stopwatch.GetTimestamp(); ... /* something being measured */ long end = Stopwatch.GetTimestamp(); TimeSpan elapsed = Stopwatch.GetElapsedTime(start, end);
+   - now Stopwatch implementation so that StartNew, Elapsed, and Stop are fully inlineable. At that point, the JIT (for .NET 10) can see that the allocated Stopwatch instance never escapes the frame, and it can be stack allocated.
+   - `EventSource` stored data as array with index mapped to an ID. IF ID were "big" - tada. Now dictionary is used.
+   - `Activity` - switched from `List` to `[]` for listeners so no locking is done when iterating the listeners, only when modifying them
+   - `NullLogger` is sealed since type checks against sealed are cheaper (for JIT).
+24. ssad
+25. asda
