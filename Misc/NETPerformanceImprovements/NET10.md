@@ -97,5 +97,12 @@
    - `EventSource` stored data as array with index mapped to an ID. IF ID were "big" - tada. Now dictionary is used.
    - `Activity` - switched from `List` to `[]` for listeners so no locking is done when iterating the listeners, only when modifying them
    - `NullLogger` is sealed since type checks against sealed are cheaper (for JIT).
-24. ssad
-25. asda
+24. Cryptograhy
+   - A ton of effort went into cryptography in .NET 10, almost entirely focused on post‑quantum cryptography (PQC). PQC refers to a class of cryptographic algorithms designed to resist attacks from quantum computers, machines that could one day render classic cryptographic algorithms like Rivest–Shamir–Adleman (RSA) or Elliptic Curve Cryptography (ECC) insecure by efficiently solving problems such as integer factorization and discrete logarithms.
+   - OpenSSL‑based platforms (platform’s native cryptographic libraries) - faster
+25. Misc
+   - DATAS - bigger, better, faster. New settings
+   -  new strongly-typed flavors of handles, with GCHandle<T>, PinnedGCHandle<T>, and WeakGCHandle<T>. Nicer to use and a bit faster
+   -  Type.AssemblyQualifiedName -> recomputed every time -> now cached
+
+
